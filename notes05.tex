@@ -90,7 +90,7 @@ Node tree[totalNodes];
     We can use an array of \emph{Node} objects to store all the vertices in a binary tree. These data structures are stored sequentially in memory and can be represented as in Figure \ref{fig:structrepresentation}.
     \begin{figure}[tbh]
         \centering
-        \includegraphics[scale=0.7]{struct-representation.pdf}
+        \includegraphics[scale=0.7]{figures/struct-representation.pdf}
         \caption{Struct representation in memory.}
         \label{fig:structrepresentation}
     \end{figure}
@@ -98,7 +98,7 @@ Node tree[totalNodes];
     If we want to implement a binary search tree in a programming language that doesn't include the feature of struct or pointers, we can implement the same thing using 4 separate arrays to get the same feature as we have in our C implementation.
     \begin{figure}[tbh]
         \centering
-        \includegraphics[scale=0.8]{arrayrepresentation.pdf}
+        \includegraphics[scale=0.8]{figures/arrayrepresentation.pdf}
         \caption{Array representation of binary tree}
         \label{fig:arrayrepresentation}
     \end{figure}
@@ -120,13 +120,13 @@ Node tree[totalNodes];
     
     \begin{figure}[tbh]
         \centering
-        \includegraphics[scale=0.8]{unbalancedbt.pdf}
+        \includegraphics[scale=0.8]{figures/unbalancedbt.pdf}
         \caption{Unbalanced binary search tree}
         \label{fig:unbalancedBT}
     \end{figure}
     \begin{figure}[tbh]
         \centering
-        \includegraphics[scale=0.8]{balancedbt.pdf}
+        \includegraphics[scale=0.8]{figures/balancedbt.pdf}
         \caption{Balanced binary search tree}
         \label{fig:balancedBT}
     \end{figure}
@@ -378,7 +378,7 @@ The bottom-up approach of DP consists of first looking at the smaller subproblem
 Unlike bottom-up approach, in top-down approach we try to include the first element in the subset, and recursively see if any combination of the rest of elements add up to the rest of the sum. If we don't find a solution, leave out the first element and continue. In other words, we first break the problem into subproblems and then calculate and store values which is the opposite of bottom-up approach where we solve smaller subproblems first, then solve larger subproblems from them.
 \begin{figure}[tbh]
 \centering
-\includegraphics[scale=0.8]{BottomUp.pdf}
+\includegraphics[scale=0.8]{figures/BottomUp.pdf}
 \caption{Tabular representation of bottom-up approach for subset sum problem.}
 \label{fig:bottom-up}
 \end{figure}
@@ -416,7 +416,7 @@ The time complexity of the above pseudocode is dependent on nested loop which is
     Our objective for this problem is to find the tree with minimum cost for searching. So we can use the cost of searching keys in the tree as our objective function for our recursive function. And before we move on to our recursive solution, let's look at the cost of searching a binary search tree in detail. 
     \begin{figure}[tbh]
         \centering
-        \includegraphics[scale=1]{optimalBST.pdf}
+        \includegraphics[scale=1]{figures/optimalBST.pdf}
         \caption{Dividing Optimal Binary Search Tree problem to sub problems}
         \label{fig:optimalBST}
     \end{figure}
